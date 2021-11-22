@@ -1,0 +1,24 @@
+{
+  "name": "fichar",
+  "version": "1.0.0",
+  "description": "Script Node con Playwright para fichar",
+  "main": "fichar.js",
+  "scripts": {
+    "start": "node fichar.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/josejob/fichar.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/josejob/fichar/issues"
+  },
+  "homepage": "https://github.com/josejob/fichar#readme",
+  "devDependencies": {
+    "playwright": "^1.16.3"
+  }
+}
