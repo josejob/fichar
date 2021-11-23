@@ -28,12 +28,12 @@ try {
   console.log(err)
 }
 
-;(async () => {
+(async () => {
   const browser = await chromium.launch({ headless: true })
 
   const context = await browser.newContext({
     geolocation: { longitude: userLongitude, latitude: userLatitude },
-    permissions: ['geolocation'],
+    permissions: ['geolocation']
   })
   const page = await context.newPage()
   await page.goto('https://a3gt.wolterskluwer.es/gt#/clockings/57962')

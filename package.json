@@ -19,6 +19,13 @@
   },
   "homepage": "https://github.com/josejob/fichar#readme",
   "devDependencies": {
-    "playwright": "^1.16.3"
+    "playwright": "^1.16.3",
+    "standard": "^16.0.4"
+  },
+  "eslintConfig": {
+    "extends": "./node_modules/standard/eslintrc.json"
+  },
+  "standard-staged": {
+    "*.{js,css,md}": "standard --fix"
   }
 }

@@ -1,5 +1,5 @@
 # fichar
-Script Node con Playwright para fichar
+Script Node.js con Playwright para fichar
 
 ███████╗██╗ ██████╗██╗  ██╗ █████╗      ██╗███████╗
 ██╔════╝██║██╔════╝██║  ██║██╔══██╗     ██║██╔════╝
@@ -33,3 +33,16 @@ Para fichar por las tardes de forma automatica:
 1. Crear tarea programada para que se realize el fichaje todas las tareas, de lunes a jueves a las 18:00 y los viernes a las 15:00.
 2. En la tarea programada, agregar el fichero /scripts/fichaje_end.bat
 TODO: Probar si con la tarea programada arranca automaticamente el PC? En caso afirmativo, el start_up.bat se puede reemplazar y usar también para las mañanas el fichaje_end.bat
+
+Pasos instalación:
+1. Instalar Node
+npm init -y
+2. Instalar playwright modo dev
+npm i -D playwright
+3. Instalar standardjs modo dev
+npm i standard -D
+4. Configurar standardjs en vscode, agregar en fichero settings.json (user)
+"javascript.validate.enable": false,
+"standard.autoFixOnSave": true,
+"standard.enableGlobally": true,
+
