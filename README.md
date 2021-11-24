@@ -35,13 +35,9 @@ Para fichar por las tardes de forma automatica:
 TODO: Probar si con la tarea programada arranca automaticamente el PC? En caso afirmativo, el start_up.bat se puede reemplazar y usar también para las mañanas el fichaje_end.bat
 
 Pasos instalación:
-1. Instalar Node
-npm init -y
-2. Instalar playwright modo dev
-npm i -D playwright
-3. Instalar standardjs modo dev
-npm i standard -D
-4. Configurar standardjs en vscode, agregar en fichero settings.json (user)
+1. Ejecutar siguiente comando:
+npm install
+2. Configurar standardjs en vscode, para formatear al guardar cambios, agregar en fichero settings.json (user)
 "javascript.validate.enable": false,
 "standard.autoFixOnSave": true,
 "standard.enableGlobally": true,
