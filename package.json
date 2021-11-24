@@ -5,7 +5,9 @@
   "main": "fichar.js",
   "scripts": {
     "start": "node fichar.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format": "standard --fix",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
@@ -19,13 +21,14 @@
   },
   "homepage": "https://github.com/josejob/fichar#readme",
   "devDependencies": {
+    "husky": "^7.0.4",
     "playwright": "^1.16.3",
     "standard": "^16.0.4"
   },
   "eslintConfig": {
     "extends": "./node_modules/standard/eslintrc.json"
   },
-  "standard-staged": {
-    "*.{js,css,md}": "standard --fix"
+  "lint-staged": {
+    "*.{js,css,md}": "npm run-script format"
   }
 }

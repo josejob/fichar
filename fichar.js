@@ -21,13 +21,13 @@ try {
 
   const context = await browser.newContext({
     geolocation: { longitude: userData.longitude, latitude: userData.latitude },
-    permissions: ['geolocation']
+    permissions: ['geolocation'],
+    viewport: {
+      width: 1920,
+      height: 937
+    }
   })
   const page = await context.newPage()
-  await page.setViewportSize({
-    width: 1920,
-    height: 937
-  })
   await page.goto('https://a3gt.wolterskluwer.es/gt#/clockings/57962')
 
   await page.type('#username', userData.username)
@@ -36,7 +36,7 @@ try {
   await page.click('#sendClocking')
   await page.waitForSelector('div.notice')
 
-  await page.screenshot({ path: './screenshots/' + 'fichar.png' })
+  await page.screenshot({ path: './screenshots/' + 'fichar' + '.png' })
 
   await page.close()
   await browser.close()
