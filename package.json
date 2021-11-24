@@ -29,6 +29,6 @@
     "extends": "./node_modules/standard/eslintrc.json"
   },
   "lint-staged": {
-    "*.{js,css,md}": "npm run-script format"
+    "*.{js,css}": "npm run-script format"
   }
 }
