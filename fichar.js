@@ -17,13 +17,17 @@ try {
 }
 
 (async () => {
-  const browser = await chromium.launch({ headless: true })
+  const browser = await chromium.launch({ headless: false })
 
   const context = await browser.newContext({
     geolocation: { longitude: userData.longitude, latitude: userData.latitude },
     permissions: ['geolocation']
   })
   const page = await context.newPage()
+  await page.setViewportSize({
+    width: 1920,
+    height: 937
+  })
   await page.goto('https://a3gt.wolterskluwer.es/gt#/clockings/57962')
 
   await page.type('#username', userData.username)
