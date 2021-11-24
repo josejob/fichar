@@ -17,7 +17,7 @@ try {
 }
 
 (async () => {
-  const browser = await chromium.launch({ headless: false })
+  const browser = await chromium.launch({ headless: true })
 
   const context = await browser.newContext({
     geolocation: { longitude: userData.longitude, latitude: userData.latitude },
