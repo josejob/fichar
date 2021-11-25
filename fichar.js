@@ -1,4 +1,4 @@
-// script para fichar
+// script para fichar test husky
 const { chromium } = require('playwright')
 const fs = require('fs')
 const fileUserCredentials = './user.json'
@@ -17,7 +17,7 @@ try {
 }
 
 (async () => {
-  const browser = await chromium.launch({ headless: true })
+  const browser = await chromium.launch({ headless: false })
 
   const context = await browser.newContext({
     geolocation: { longitude: userData.longitude, latitude: userData.latitude },
