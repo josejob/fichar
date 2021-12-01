@@ -18,10 +18,12 @@ Crear el fichero user.json con la siguiente estructura:
         "username": "11111111A",
         "password": "1111",
         "longitude": 41.111111, 
-        "latitude": 2.111111
+        "latitude": 2.111111,
+        "tracelog": false
     }
 
 Si no se crea el fichero user.json hara login con los campos del usuario por defecto indicados en el fichero fichar.js
+El parametro "tracelog" activa las trazas para debugar
 
 Para fichar por las mañanas de forma automatica:
 1. Hacer un run de "shell:startup"
