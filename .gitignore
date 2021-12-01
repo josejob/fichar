@@ -2,3 +2,4 @@ node_modules
 screenshots/*.png
 .eslintcache
 user.json
+tracelog/*.zip
