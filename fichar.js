@@ -37,8 +37,8 @@ try {
   await page.type('#username', userData.username)
   await page.type('#pwd', userData.password)
 
-  // await page.click('#sendClocking')
-  // await page.waitForSelector('div.notice')
+  await page.click('#sendClocking')
+  await page.waitForSelector('div.notice')
 
   await page.screenshot({ path: './screenshots/' + 'fichar' + '.png' })
   if (activeTraceLog) await context.tracing.stop({ path: './tracelog/trace.zip' })
