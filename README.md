@@ -25,6 +25,16 @@ Crear el fichero user.json con la siguiente estructura:
 Si no se crea el fichero user.json hara login con los campos del usuario por defecto indicados en el fichero fichar.js
 El parametro "tracelog" activa las trazas para debugar
 
+Pasos instalación:
+1. Ejecutar siguiente comando:
+npm install
+2. Editar fichero /scripts/start_up.bat , modificar ruta de la raiz donde se ubica el proyecto. La carpeta /fichar/ es la raiz del proyecto 
+3. Dentro de la carpeta raiz /fichar/ crear el fichero user.json con el contenido correspondiente
+4. OPCIONAL: Configurar standardjs en vscode, para formatear al guardar cambios, agregar en fichero settings.json (user)
+"javascript.validate.enable": false,
+"standard.autoFixOnSave": true,
+"standard.enableGlobally": true,
+
 Para fichar por las mañanas de forma automatica:
 1. Hacer un run de "shell:startup"
 2. Copiar dentro el fichero /scripts/start_up.bat. Después revisar des del Administrador de tareas, que en la pestaña Inicio se ha creado el start_up.bat y está habilitado
@@ -35,12 +45,4 @@ Para fichar por las tardes de forma automatica:
 1. Crear tarea programada para que se realize el fichaje todas las tareas, de lunes a jueves a las 18:00 y los viernes a las 15:00.
 2. En la tarea programada, agregar el fichero /scripts/fichaje_end.bat
 TODO: Probar si con la tarea programada arranca automaticamente el PC? En caso afirmativo, el start_up.bat se puede reemplazar y usar también para las mañanas el fichaje_end.bat
-
-Pasos instalación:
-1. Ejecutar siguiente comando:
-npm install
-2. Configurar standardjs en vscode, para formatear al guardar cambios, agregar en fichero settings.json (user)
-"javascript.validate.enable": false,
-"standard.autoFixOnSave": true,
-"standard.enableGlobally": true,
 
