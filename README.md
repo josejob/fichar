@@ -26,7 +26,7 @@ Si no se crea el fichero user.json hara login con los campos del usuario por def
 El parametro "tracelog" activa las trazas para debugar
 
 Pasos instalación:
-1. Ejecutar siguiente comando:
+1. Dentro de la carpeta raiz /fichar, ejecutar siguiente comando:
 npm install
 2. Editar fichero /scripts/start_up.bat , modificar ruta de la raiz donde se ubica el proyecto. La carpeta /fichar/ es la raiz del proyecto 
 3. Dentro de la carpeta raiz /fichar/ crear el fichero user.json con el contenido correspondiente
